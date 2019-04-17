@@ -32,7 +32,9 @@ class Chat extends Component {
     }
 
     componentDidUpdate() {
-        this.messagesEnd.current.scrollIntoView();
+        if (this.state.messageInput === '') {
+            this.messagesEnd.current.scrollIntoView();
+        }
     }
 
     changeInputMessage = (e) => {
