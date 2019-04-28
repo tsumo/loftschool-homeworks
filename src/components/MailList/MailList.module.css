@@ -1,6 +1,10 @@
 .link {
   display: block;
   padding: 4px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 470px;
 }
 
 .container {
